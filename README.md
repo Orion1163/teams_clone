@@ -58,6 +58,10 @@ It is designed using **microservices architecture** and follows **industry-level
 
 ```
 
+## Sequence Diagram
+
+![Sequence Diagram](./structure/sequence.png)
+
 ---
 
 ##  Tech Stack
