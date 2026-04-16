@@ -52,7 +52,7 @@ It is designed using **microservices architecture** and follows **industry-level
 
               WebSocket Server
 
-                   ↓
+                    ↓
 
                 Databases
 
