@@ -1,26 +1,26 @@
-# 🚀 Real-Time Collaboration Platform (MS Teams Backend Clone)
+# Real-Time Collaboration Platform (MS Teams Backend Clone)
 
 A scalable, production-grade backend system inspired by Microsoft Teams, Slack, and Discord.  
 This project demonstrates real-time communication, distributed systems, and event-driven architecture using modern backend technologies.
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project is a **real-time collaboration backend system** that supports:
 
-- 💬 Instant messaging (1:1 and group chat)
-- ⚡ Real-time communication using WebSockets
-- 🏢 Workspaces & channels
-- 📁 File sharing
-- 🔔 Notifications
-- 👤 User authentication & authorization
+- Instant messaging (1:1 and group chat)
+- Real-time communication using WebSockets
+- Workspaces & channels
+- File sharing
+- Notifications
+- User authentication & authorization
 
 It is designed using **microservices architecture** and follows **industry-level best practices**.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Build a **scalable backend system**
 - Implement **real-time communication**
@@ -30,9 +30,9 @@ It is designed using **microservices architecture** and follows **industry-level
 
 ---
 
-## 🧱 System Architecture
+##  System Architecture
 
-![Architecture Diagram](./asset/architecture.png)
+![Architecture Diagram](./structure/architecture.png)
 
 ```
 
@@ -44,22 +44,23 @@ It is designed using **microservices architecture** and follows **industry-level
 | Auth Service | Chat Service | Workspace Service  |
 | File Service | Notification Service              |
  --------------------------------------------------
+                    ↓
 
-```
-    ↓
-```
+            Message Broker (Kafka)
 
-Message Broker (Kafka)
-↓
-WebSocket Server
-↓
-Databases
+                    ↓
+
+              WebSocket Server
+
+                   ↓
+
+                Databases
 
 ```
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - Java 17+
@@ -86,16 +87,16 @@ Databases
 
 ---
 
-## 📦 Features
+##  Features
 
-### 🔐 Authentication Service
+### Authentication Service
 - User registration & login
 - JWT-based authentication
 - Role-based access (ADMIN, USER)
 
 ---
 
-### 💬 Chat Service
+### Chat Service
 - One-to-one messaging
 - Group chats (channels)
 - Message persistence
@@ -106,7 +107,7 @@ Databases
 
 ---
 
-### ⚡ Real-Time Communication
+### Real-Time Communication
 - WebSocket-based messaging
 - Typing indicators
 - Online/offline presence
@@ -114,7 +115,7 @@ Databases
 
 ---
 
-### 🏢 Workspace Service
+### Workspace Service
 - Create workspaces (teams)
 - Add/remove users
 - Channel creation
@@ -122,21 +123,21 @@ Databases
 
 ---
 
-### 📁 File Service
+### File Service
 - Upload/download files
 - Attach files to messages
 - Metadata storage
 
 ---
 
-### 🔔 Notification Service
+### Notification Service
 - Event-driven notifications
 - Email/push simulation
 - Kafka-based triggers
 
 ---
 
-## 🔄 Event-Driven Flow
+## Event-Driven Flow
 
 ```
 
@@ -152,7 +153,7 @@ Push to receiver
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -205,7 +206,7 @@ root/
 
 ---
 
-## 📁 Folder Explanation
+## Folder Explanation
 
 - **controller/** → Handles API requests  
 - **service/** → Business logic  
@@ -217,7 +218,7 @@ root/
 
 ---
 
-## 🔑 Key Concepts Implemented
+## Key Concepts Implemented
 
 - Microservices Architecture  
 - Event-Driven Systems (Kafka)  
@@ -229,7 +230,7 @@ root/
 
 ---
 
-## ⚡ Advanced Features
+## Advanced Features
 
 - Message pagination (infinite scroll)
 - Search messages
@@ -240,7 +241,7 @@ root/
 
 ---
 
-## 🧠 Bonus Features (Optional)
+## Bonus Features (Optional)
 
 - Video call signaling (WebRTC backend)
 - AI-based chat summarization
@@ -255,12 +256,12 @@ http://localhost:8080/swagger-ui/
 
 ---
 
-## 🐳 Running the Project
+## Running the Project
 
 ### 1. Clone Repository
 ```
 
-git clone [https://github.com/your-username/teams-backend.git](https://github.com/your-username/teams-backend.git)
+git clone [[https://github.com/your-username/teams-backend.git](https://github.com/Orion1163/teams_clone/)]([https://github.com/your-username/teams-backend.git](https://github.com/Orion1163/teams_clone/))
 cd teams-backend
 
 ```
@@ -279,7 +280,7 @@ docker-compose up --build
 
 ---
 
-## 🔐 Sample APIs
+##  Sample APIs
 
 ### Login
 ```
@@ -304,7 +305,7 @@ POST /workspace/create
 
 ---
 
-## 📊 Database Design
+## Database Design
 
 ### MongoDB
 - messages  
@@ -317,7 +318,7 @@ POST /workspace/create
 
 ---
 
-## 📈 Scalability Considerations
+## Scalability Considerations
 
 - Stateless services for horizontal scaling  
 - Kafka for decoupling services  
@@ -326,7 +327,7 @@ POST /workspace/create
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Kubernetes deployment  
 - Distributed tracing (Zipkin)  
@@ -335,13 +336,13 @@ POST /workspace/create
 
 ---
 
-## 🏆 Resume Description
+## Resume Description
 
 Built a scalable real-time collaboration backend using Spring Boot, WebSockets, Kafka, and Redis, implementing microservices architecture, event-driven communication, and real-time messaging similar to Microsoft Teams.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Rohan Chaudhari
 
